@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Forum Communauté</string>
+    <string name="forum_subtitle">Annuaire et profils des membres du forum</string>
+    <string name="add_member">Ajouter un membre</string>
+    <string name="edit_member">Modifier le membre</string>
+    <string name="delete_member">Supprimer</string>
+    <string name="name_label">Nom d\'utilisateur</string>
+    <string name="name_hint">Ex. Sarah Connor, Maxime Dev…</string>
+    <string name="age_label">Âge</string>
+    <string name="age_hint">Ex. 27</string>
+    <string name="role_label">Rôle sur le forum</string>
+    <string name="bio_label">Présentation / Bio (optionnel)</string>
+    <string name="bio_hint">Passionné de tech, gaming, design…</string>
+    <string name="topic_label">Sujet favori</string>
+    <string name="save_button">Enregistrer</string>
+    <string name="cancel_button">Annuler</string>
+    <string name="delete_confirm_title">Confirmer la suppression</string>
+    <string name="delete_confirm_message">Voulez-vous vraiment retirer ce membre du forum ? Cette action est irréversible.</string>
+    <string name="search_placeholder">Rechercher un membre…</string>
+    <string name="sort_by">Trier par</string>
+    <string name="sort_date">Récents</string>
+    <string name="sort_name">Nom (A-Z)</string>
+    <string name="sort_age_asc">Âge croissant</string>
+    <string name="sort_age_desc">Âge décroissant</string>
+    <string name="empty_forum_title">Le forum est encore vide</string>
+    <string name="empty_forum_subtitle">Aucun membre n\'est encore enregistré dans la base de données locale. Ajoutez votre premier membre dès maintenant !</string>
+    <string name="stat_total_members">Membres</string>
+    <string name="stat_avg_age">Âge moyen</string>
+    <string name="stat_youngest">Plus jeune</string>
+    <string name="stat_oldest">Plus âgé</string>
+    <string name="years_suffix">ans</string>
+    <string name="role_member">Membre</string>
+    <string name="role_moderator">Modérateur</string>
+    <string name="role_contributor">Contributeur</string>
+    <string name="role_vip">VIP</string>
+    <string name="role_newbie">Nouveau</string>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- Top Header Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#3F51B5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Forum"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnVider"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Vider"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="20dp">
+
+        <!-- Label: Nom : -->
+        <TextView
+            android:id="@+id/tvLabelNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom :"
+            android:textColor="#1C1B1F"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Input Box: Nom -->
+        <EditText
+            android:id="@+id/etNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Soa"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName|textCapWords"
+            android:minHeight="48dp"
+            android:textColor="#1C1B1F"
+            android:textColorHint="#9E9E9E"
+            android:textSize="17sp" />
+
+        <!-- Label: Age : -->
+        <TextView
+            android:id="@+id/tvLabelAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Age :"
+            android:textColor="#1C1B1F"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Input Box: Age -->
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="45"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColor="#1C1B1F"
+            android:textColorHint="#9E9E9E"
+            android:textSize="17sp" />
+
+        <!-- Button: Ajouter -->
+        <Button
+            android:id="@+id/btnAjouter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="Ajouter"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Button: Lister -->
+        <Button
+            android:id="@+id/btnLister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_button_secondary"
+            android:text="Lister"
+            android:textAllCaps="false"
+            android:textColor="#3F51B5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Divider Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:background="#CFD8DC" />
+
+        <!-- Empty list message -->
+        <TextView
+            android:id="@+id/tvEmptyList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Aucun utilisateur. Entrez un nom et un âge puis cliquez sur « Ajouter »."
+            android:textColor="#78909C"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <!-- List View for 1 - Soa | 45 ans -->
+        <ListView
+            android:id="@+id/lvUtilisateurs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#EEEEEE"
+            android:dividerHeight="1dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

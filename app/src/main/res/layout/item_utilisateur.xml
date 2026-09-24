@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tvItemUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="1 - Soa | 45 ans"
+        android:textColor="#212121"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/btnDeleteUser"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Supprimer"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_delete"
+        android:tint="#D32F2F" />
+
+</LinearLayout>
